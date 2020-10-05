@@ -1,0 +1,29 @@
+  body{
+         background-color: white !important;
+      }
+      #mainPage{
+         background: url("/static/media/me.jpeg") 50% 0 no-repeat fixed;
+         color: white;
+         height: 650px;
+         padding: 100px 0 0 0;
+         background-color: #684EDE !important;
+         background-image:
+      /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+      .c-button{
+       background-color: #684EDE !important;
+       border-radius:32px !important;
+       color:white;
+      }
+      .text-custom{
+      color:#684EDE !important;
+      }
+      .topskill-text{
+         color:#684EDE !important;;
+      }

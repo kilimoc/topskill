@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TopSkill | Platform for where experts get Hired For Their Skills</title>
+    {% load static %}
+    <!--Font awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Bootstrap cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="{% static 'logo/logo.png' %}" type="image/x-icon"/>
+    <!--Custom Stleing-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+
+
+
+
+
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" href="#"><img src="{% static 'logo/logo.png' %}"></a>
+     <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i> </button>
+  </form>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link text-custom" href="#"><i class="fa fa-users"></i>I am Here To Hire</a>
+      <a class="nav-link text-custom" href="{% url 'freelancer:f_signup' %}"><i class="fa fa-users"></i>I am a Freelancer</a>
+      <a class="nav-link text-custom" href="{% url 'design:signin' %}"><i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+</nav>
+    </div>
+
+{% block content %}
+
+<div class="container-fluid" id="mainPage">
+    <div class="jumbotron text-white bg-transparent" >
+        <div class="row">
+            <div class="col col-md-8">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <h1 class="display-4">Hire Verified,High Rated  developers </h1>
+        <h5 class="center-align">Website Developers .Desktop Developers .Data Analysts</h5>
+
+
+    </div>
+    <div class="carousel-item">
+       <h1 class="display-4">Reduce business operational costs </h1>
+        <h5 class="center-align">Get professional flexible virtual assistance without worrying about having a physical space.</h5>
+    </div>
+    <div class="carousel-item">
+        <h1 class="display-4">Get Quality Content</h1>
+        <h5 class="center-align">Technical Writing. Content Writing. Digital Marketing. Copy Writing .Editing and Profreading</h5>
+    </div>
+  </div>
+</div>
+
+                <h1 class="display-4"><button class="btn c-button">Get Quotation</button> </h1>
+
+            </div>
+        </div>
+
+
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+<!--JavaScript Links-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
